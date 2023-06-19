@@ -449,3 +449,148 @@ p {
     margin-top: 5rem;
   }
 }
+
+/* ==========  friends  ========== */
+.friends {
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.friends-text h4 {
+  margin-bottom: 2.2rem;
+}
+.friends-description {
+  display: block;
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
+}
+@media screen and (min-width: 768px) {
+  .friends {
+    flex-direction: row;
+    align-items: center;
+    padding: 6rem 0;
+    gap: 3rem;
+  }
+  .friends-text {
+    margin-right: 10rem;
+  }
+
+  .friends-text h4 {
+    margin-bottom: 5rem;
+  }
+  .friends-description {
+    font-size: 3rem;
+    margin-bottom: 0;
+  }
+}
+.logo-container {
+  position: relative;
+  width: 256px;
+  height: 256px;
+  margin: 0 auto;
+}
+.logos {
+  width: max-content;
+  height: max-content;
+  margin-top: 1rem;
+}
+.logos div {
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div1 {
+  width: 256px;
+  height: 256px;
+  border: 3px solid #f1e4ff;
+  background-color: #fff;
+  padding: 3.8rem;
+}
+.div2 {
+  background-color: #f1e4ff;
+  width: 180px;
+  height: 180px;
+  padding: 3.6rem;
+}
+.div3 {
+  position: relative;
+  background-color: #fff;
+  width: 105px;
+  height: 105px;
+}
+.div1 span {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 72%;
+  width: 100%;
+}
+.div1 span:nth-child(2) {
+  top: 10%;
+  width: 100%;
+}
+
+.logo {
+  width: 60px;
+  cursor: pointer;
+}
+.logo:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.logo1 {
+  position: absolute;
+  right: 40%;
+  top: -20px;
+  z-index: 2;
+}
+.logo6 {
+  position: absolute;
+  bottom: -50px;
+  z-index: 2;
+}
+.logo7 {
+  position: absolute;
+  top: -20px;
+}
+.logo8 {
+  position: absolute;
+  bottom: -15px;
+  left: -15px;
+}
+.logo9 {
+  position: absolute;
+  right: -15px;
+  bottom: -15px;
+}
+@media screen and (min-width: 768px) {
+  .logo-container {
+    position: relative;
+    width: 430px;
+    height: 430px;
+    margin-left: 12rem;
+  }
+  .div1 {
+    width: 430px;
+    height: 430px;
+    padding: 6.5rem;
+  }
+  .div2 {
+    background-color: #f1e4ff;
+    width: 300px;
+    height: 300px;
+    padding: 6rem;
+  }
+  .div3 {
+    background-color: #fff;
+    width: 175px;
+    height: 175px;
+  }
+  .logo {
+    width: 90px;
+  }
+}
